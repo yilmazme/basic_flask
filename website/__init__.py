@@ -12,7 +12,7 @@ def create_app():
 
     if ENV == "dev":
         app.debug = True
-        app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:postgrepba6ikha-@localhost/flaskapp'
+        app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://postgres:<password>@localhost/flaskapp'
 
     else:
         app.debug = False
